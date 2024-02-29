@@ -1,5 +1,5 @@
 // Edited version of BÉPO for ubuntu, all edit are show as // a b c d -> a b e f
-// Copy paste in /usr/share/X11/xkb/symbols/fr
+// Copy paste in /usr/share/X11/xkb/symbols/fr to replace current "bepo" version
 
 // Version 1.1rc2 of the Bépo keyboard layout, 
 // normalized by the AFNOR NF Z71‐300 norm.
@@ -24,9 +24,9 @@
 // ║ Ctrl  ║ WinG ║ Alt ║ Espace                  _ ║AltGr║ WinD ║WinM ║ Ctrl ║
 // ╚═══════╩══════╩═════╩═══════════════════════════╩═════╩══════╩═════╩══════╝
 partial alphanumeric_keys
-xkb_symbols "bepo_dev" {
+xkb_symbols "bepo" { // "bepo_dev"
 
-	name[Group1]= "French (Bepo Dev)";
+	name[Group1]= "French (Bepo)"; // (Bepo dev)
 
 	include "pc(pc105)"
 
