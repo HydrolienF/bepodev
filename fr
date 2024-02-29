@@ -11,11 +11,11 @@
 // │ # ¶│ 1 „│ 2 “│ 3 ”│ 4 ⩽│ 5 ⩾║ 6  │ 7 ¬│ 8 ¼│ 9 ½│ 0 ¾│ ° ′│ ` ″║         ║
 // │ $ –│ " —│ « <│ » >│ ( [│ ) ]║ @ ^│ + ±│ - −│ / ÷│ * ×│ = ≠│ % ‰║ <--     ║
 // ╔════╧══╗─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─┴──┬─╚══╦══════╣
-// ║  |<-  ║ B _│ É  │ P §│ O Œ│ È `║ !  │ V  │ D  │ L £│ J  │ Z  │ W  ║   |  ║
+// ║  |<-  ║ B _│ É  │ P €│ O Œ│ È €║ !  │ V  │ D  │ L £│ J  │ Z  │ W  ║   |  ║
 // ║  ->|  ║ b |│ é ´│ p &│ o œ│ è `║ ˆ ¡│ v ˇ│ d ∞│ l /│ j  │ z ―│ w  ║ <-'  ║
 // ╠═══════╩╗───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───┴┬───╚╗     ║
-// ║        ║ A Æ│ U Ù│ I ˙│ E ¤│ ; ,║ C ©│ T ™│ S ſ│ R ®│ N  │ M  │ Ç ©║     ║
-// ║  CAPS  ║ a æ│ u ù│ i ¨│ e €│ , '║ c ¸│ t ᵉ│ s ß│ r ˘│ n ~│ m ¯│ ç  ║     ║
+// ║        ║ A )│ U }│ I ]│ E >│ ; ,║ C ©│ T ™│ S ß│ R ®│ N  │ M  │ Ç ©║     ║
+// ║  CAPS  ║ a (│ u {│ i [│ e <│ , '║ c ¸│ t "│ s !│ r &│ n |│ m ¯│ ç  ║     ║
 // ╠══════╦═╝──┬─┴──┬─┴──┬─┴─══─┴──┬─┴──┬─┴─══─┴──┬─┴──┬─┴──┬─┴──╔═╧════╩═════╣
 // ║   ^  ║ Ê ^│ À ‚│ Y ‘│ X ’│ : ·│ K ‑║ ? ̉ │ Q ̛│ G †│ H ‡│ F  ║     ^      ║
 // ║   |  ║ ê /│ à \│ y {│ x }│ . …│ k ~║ ’ ¿│ q °│ g µ│ h ̣ │ f ˛║     |      ║
@@ -24,9 +24,9 @@
 // ║ Ctrl  ║ WinG ║ Alt ║ Espace                  _ ║AltGr║ WinD ║WinM ║ Ctrl ║
 // ╚═══════╩══════╩═════╩═══════════════════════════╩═════╩══════╩═════╩══════╝
 partial alphanumeric_keys
-xkb_symbols "bepo_afnor" {
+xkb_symbols "bepo_dev" {
 
-	name[Group1]= "French (Bepo, ergonomic, Dvorak way, AFNOR)";
+	name[Group1]= "French (Bepo Dev)";
 
 	include "pc(pc105)"
 
@@ -66,7 +66,7 @@ xkb_symbols "bepo_afnor" {
 	key <AC07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ t, T, quotedbl, trademark ] }; // t T ᵉ ™ -> t T " ™
 	key <AC08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ s, S, exclam, UFDD4 ] }; // s S ß ſ -> s S ! ß
 	key <AC09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ r, R, ampersand,dead_breve ] }; // r R ˘ ® -> r R & ˘
-	key <AC10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ n, N, bar, dead_tilde ] }; // n N ~ ⚓ -> n N  ~
+	key <AC10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ n, N, bar, dead_tilde ] }; // n N ~ ⚓ -> n N | ~
 	key <AC11> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ m, M, dead_macron, U26FD ] }; // m M ¯ ⛽
 	key <BKSL> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ ccedilla, Ccedilla, U2708, U1F12F ] }; // ç Ç ✈ 🄯
 

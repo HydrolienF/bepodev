@@ -6,6 +6,7 @@ Most of the keys are the same than [bépo](https://bepo.fr/), exept:
  - with altgr uppercase : "AUIE" -> ")}]>"
  - with altgr : "TSRN" -> ""!&|"
  
+ € on altgr uppercase P.
 
  
  Keys that were at this places have been move somewere else on the Keyboard.
